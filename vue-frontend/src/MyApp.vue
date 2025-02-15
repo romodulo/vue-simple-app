@@ -1,17 +1,24 @@
 <script setup>
 import { ref } from 'vue'
+import TaskList from './components/TaskList.vue'
+
 
 const variableOne = ref("text-input")
-
-const functionDefinition = () => {return variableOne.value = ""}
+// deprecated
+// const functionDefinition = () => {return variableOne.value = ""}
+const superList = ref([])
+const addTaskToList = () => {superList.value.push(variableOne.value); variableOne.value = "";}
 
 </script>
 
 <template>
-    <div class="definedFlex">
-        <h1>{{ variableOne }}</h1>
-        <input class="definedInputElement"v-model="variableOne">
-        <button class="definedInputElement buttonElement" v-on:click="functionDefinition">Submit</button>
+    <div>
+        <TaskList :propList = "superList" />
+        <h1 class="custom-self-flex _temp-self-scoped">{{ variableOne }}</h1>
+        <div class="definedFlex" v-on:keyup.enter="addTaskToList">
+            <input class="definedInputElement"v-model="variableOne">
+            <button class="definedInputElement buttonElement" v-on:click="addTaskToList">Submit</button>
+        </div>
     </div>
 </template>
 

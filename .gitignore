@@ -1,0 +1,6 @@
+#any py-related-data
+__pycache__/
+*pyc
+
+#others
+deprecated_App--components_fromVuejs/

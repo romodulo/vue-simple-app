@@ -33,3 +33,14 @@ a,
     padding: 0 2rem;
   }
 }
+
+/* custom-by-me */
+.custom-self-flex {
+  display: flex;
+  -ms-flex-direction: column;
+}
+
+/* temp-styles-by-me */
+._temp-self-scoped {
+  padding-bottom: 500px;
+}

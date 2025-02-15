@@ -1,5 +1,6 @@
 ?--- create a list ---?
-?--- remove files -unneccessary-vue-components ---?
+?--- remove files -unnecessary-vue-components ---? //done
+?---  ---?
 
 
 ?---  ---?
