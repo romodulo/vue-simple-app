@@ -31,16 +31,41 @@ a,
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
+    /* my settings: */
+    height: 100vh;
   }
 }
 
 /* custom-by-me */
 .custom-self-flex {
   display: flex;
-  -ms-flex-direction: column;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+.self_display-block {
+  padding-top: 0px;
+}
+/* .self_flex-start {
+  flex-start: end;
+} */
+.self_flex-box {
+  display: flex;
+  flex-direction: column;
+}
+.self_height {
+  height: 12vh;
+}
+.self_height-4 {
+  height: 4vh;
 }
 
 /* temp-styles-by-me */
-._temp-self-scoped {
-  padding-bottom: 500px;
+/* .temp-self-scoped {
+  padding-top: 500px;
+} */
+
+/* test-styles */
+ul {
+  padding-left: 0px;
 }

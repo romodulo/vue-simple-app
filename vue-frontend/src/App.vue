@@ -12,12 +12,22 @@ const addTaskToList = () => {superList.value.push(variableOne.value); variableOn
 </script>
 
 <template>
-    <div>
-        <TaskList :propList = "superList" />
-        <h1 class="custom-self-flex _temp-self-scoped">{{ variableOne }}</h1>
+    <div class="custom-self-flex">
+        <div class="self_flex-box">
+            <div class="self_height-4">
+            
+            </div>
+            <TaskList :propList = "superList" />
+            <ul class="self_display-block">
+                <h1>{{ variableOne }}</h1>
+            </ul>
+        </div>
         <div class="definedFlex" v-on:keyup.enter="addTaskToList">
             <input class="definedInputElement"v-model="variableOne">
             <button class="definedInputElement buttonElement" v-on:click="addTaskToList">Submit</button>
+            <div class="self_height">
+            
+            </div>
         </div>
     </div>
 </template>
