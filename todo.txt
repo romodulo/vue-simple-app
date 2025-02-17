@@ -1,7 +1,9 @@
 ?--- create a list ---?
 ?--- remove files -unnecessary-vue-components ---? //done
 
-< 2-17> <22:50>
+possible-bug-fixes: to-do::
+- there is a bug when you enter a blank entry, and there is "dot" 
+--residing very near a "first-dot". 
 
 
 ?---  ---?
